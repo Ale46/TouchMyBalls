@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="Touch My Balls" package="com.inerd.touchmyballs" version="1.0.0" company="" />
+	<app main="Main" file="main" path="Export" />
+	<set name="SWF_VERSION" value="10.1" />
+	<set name="BUILD_DIR" value="Export" />
+	
+	<window width="640" height="480" hardware="true" unless="target_flash" />
+	<window orientation="landscape" width="0" height="0" if="mobile" />
+	<window fps="30"/>
+	<app preloader="Preloader" unless="target_js" />
+	<source path="Source" />
+	
+	<haxelib name="nme" />
+	<haxelib name="flixel" />
+	<haxelib name="actuate" />
+	
+
+	
+	<assets path="assets/data" include="*.ttf" type="font" />
+	<assets path="assets/data" include="*.png" type="image" />
+	<assets path="assets/data/vcr" include="*.png" type="image" />
+	<assets path="assets/data/vis" include="*.png" type="image" />
+
+	<assets path="assets" >
+		
+		<music path="level1.mp3" id="level1" />
+		<music path="level2.mp3" id="level2" />
+		<music path="level3.mp3" id="level3" />
+		<music path="level4.mp3" id="level4" />
+		<music path="level5.mp3" id="level5" />
+		<music path="level6.mp3" id="level6" />
+		<music path="level7.mp3" id="level7" />
+		<music path="level8.wav" id="level8" />
+		<music path="level9.wav" id="level9" />
+		<music path="level10.wav" id="level10" />
+		
+		<music path="arcade.mp3" id="arcade" />
+		<music path="menu.mp3" id="menu" />
+		
+		<sound path="explode.mp3" id="explode" />
+		
+		<image path="logo.png" id="logo" />
+		<image path="soundon.png" id="soundon" />
+		<image path="soundoff.png" id="soundoff" />
+		<image path="gameover_640x480.png" id="gameover" />
+		<image path="nextlevel_640x480.png" id="nextlevel" />
+		<image path="gameresults_640x480.png" id="gameresults" />
+		<image path="statics_640x480.png" id="statics" />
+		<image path="rainbow_medium.png" id="rainbow" />		
+		<image path="game_background_640x480.png" id="gamebackground" />		
+		<image path="color_changed.png" id="colorchanged" />		
+	</assets>
+	
+	<assets path="assets/back" >
+		<image path="back_640x480_land.png" id="background" />
+		<image path="back_640x480_touch.png" id="touch" />
+		<image path="back_640x480_my.png" id="my" />
+		<image path="back_640x480_balls.png" id="balls" />
+	</assets>
+	
+	<icon path="assets/icon.svg" />
+	
+	<ndll name="std" />
+	<ndll name="regexp" />
+	<ndll name="zlib" />
+	<ndll name="nme" haxelib="nme" />
+	
+</project>
